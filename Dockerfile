@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Copy env file
-COPY .env .
+COPY .env .env
 
 # Run the worker
 CMD ["python", "main.py"]
